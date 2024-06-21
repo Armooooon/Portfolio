@@ -2,6 +2,7 @@
 import React from 'react'
 import profilepic from'../assetsp/profilepic.png'
 import { TypeAnimation } from 'react-type-animation'
+import ShinyEffect from './ShinyEffect'
 
 const Hero = () => {
     return (
@@ -18,7 +19,7 @@ const Hero = () => {
                 1000,
                 "Manager",
                  1000
-                ]}
+                 ]}
                 speed={50}
                 repeat={Infinity}
                 className='font-bold italic'
@@ -35,7 +36,15 @@ const Hero = () => {
                     z-10 cursor-pointer font-bold text-gray-200 w-1/2 mt-6 p-2 border border-gray-400 rounded-xl'>Referenzen</button>
                 </div>
             </div>
-            <img src={profilepic} className='w-[300px] md:-[500px]'/>
+            <div className='absolute inset-0 overflow-hidden md:overflow-visible'>
+                <div className='hidden md:block'>
+                <ShinyEffect left={100} top={200} size={1400}/>
+                </div>
+           
+            <ShinyEffect left={-100} top={0} size={1200}/>
+            </div>
+
+            <img src={profilepic} className='w-[500px] md:-[600px]'/>
        </div>
     )
 }
