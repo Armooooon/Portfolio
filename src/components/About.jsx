@@ -13,7 +13,8 @@ import {
     DiSass,
     DiBootstrap,
     DiMongodb,
-    DiGithubBadge
+    DiGithubBadge,
+    DiGit
 } from 'react-icons/di'
 
 const About = () => {
@@ -50,24 +51,17 @@ return (
                 <DiBootstrap className='text-purple-600'/>
                 <DiJavascript1 className='text-yellow-500'/>
                 <DiReact className='text-blue-500'/>
-                <DiNodejsSmall className='text-green-500'/>
+                <DiGit className='text-red-500'/>
             </div>
 
         </div>
 
         <div className='p-6'>
-            <h2 className='text-gray-200 text.3xl font-bold mb-4'> Skills</h2>
+            <h2 className='text-gray-200 text.3xl font-bold mb-4'> Interessen</h2>
             <p className='text-gray-300 mb-4'>
-                Ich bin Fullstack-developer. Ich habe Erfahrung in HTML, CSS und Javascript. Zusätzlich weiß ich mit Frameworks wie React.js und Bootstrap umzugehen und habe erfahrung in der versionskontrolle mit Git. 
+                Ich bin begeistert für Strategie-Computerspiele, treibe Sport, beschäftige mich mit Computern, Programmiere kleine Spiele und höre ab und zu gerne Musik
             </p>
-            <div className='md:flex flex-wrap gap-4 text-4xl justify-center hidden'>
-                <DiHtml5 className='text-orange-600'/>
-                <DiCss3 className='text-blue-600'/>
-                <DiBootstrap className='text-purple-600'/>
-                <DiJavascript1 className='text-yellow-500'/>
-                <DiReact className='text-blue-500'/>
-                <DiNodejsSmall className='text-green-500'/>
-            </div>
+        
 
         </div>
 
@@ -90,18 +84,11 @@ return (
         </div>
 
         <div className='p-6'>
-            <h2 className='text-gray-200 text.3xl font-bold mb-4'> Skills</h2>
+            <h2 className='text-gray-200 text.3xl font-bold mb-4'> Sprachen</h2>
             <p className='text-gray-300 mb-4'>
-                Ich bin Fullstack-developer. Ich habe Erfahrung in HTML, CSS und Javascript. Zusätzlich weiß ich mit Frameworks wie React.js und Bootstrap umzugehen und habe erfahrung in der versionskontrolle mit Git. 
+                Deutsch Spreche ich als Muttersprache. Englisch ist meine Zweitsprache, diese spreche ich Fließend (Level C1), angelernt habe ich Russisch, wobei ich hier lediglich die Grundkenntnise besitze.
             </p>
-            <div className='md:flex flex-wrap gap-4 text-4xl justify-center hidden'>
-                <DiHtml5 className='text-orange-600'/>
-                <DiCss3 className='text-blue-600'/>
-                <DiBootstrap className='text-purple-600'/>
-                <DiJavascript1 className='text-yellow-500'/>
-                <DiReact className='text-blue-500'/>
-                <DiNodejsSmall className='text-green-500'/>
-            </div>
+        
 
         </div>
 

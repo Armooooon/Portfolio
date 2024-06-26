@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import profilepic from'../assetsp/profilepic.png'
@@ -15,9 +16,9 @@ const Hero = () => {
                 sequence={[
                 "Entwickler", 
                  1000,
-                "Webdesigner",
+                "Webdesign",
                 1000,
-                "Manager",
+                "Frontend",
                  1000
                  ]}
                 speed={50}
@@ -25,25 +26,18 @@ const Hero = () => {
                 className='font-bold italic'
                 />
                 </p>
-                <h2 className='text-gray-300'>Stellen sie mich ein! Jetzt!</h2>
+                <h2 className='text-gray-300'></h2>
 
-                <div className='flex flex-row gap-4 mb-4 md:mb-0'>
-                    <button className='transform tramsition-transform hover:scale-105 hover:shadow-lg
+                    <div className='flex flex-row gap-4 mb-4 md:mb-0'>
+                  <button   className='transform tramsition-transform hover:scale-105 hover:shadow-lg
                     z-10 cursor-pointer font-bold text-gray-200 w-1/2 mt-6 p-2
-                    bg-gradient-to-r from-[#50a7c7] via-[#1f7cBf] to-[#3d6ca4] rounded-xl'>Lebenslauf Downloaden</button>
+                    bg-gradient-to-r from-[#50a7c7] via-[#1f7cBf] to-[#3d6ca4] rounded-xl'><a className='block w-full h-full text-center'  href='https://drive.google.com/file/d/1B0kFwF5hkYRkfYddM52iUpYBwoOFcq9D/view?usp=drive_link'>Lebenslauf ansehen</a></button>
 
                     <button className='transform tramsition-transform hover:scale-105 hover:shadow-lg
-                    z-10 cursor-pointer font-bold text-gray-200 w-1/2 mt-6 p-2 border border-gray-400 rounded-xl'>Referenzen</button>
+                    z-10 cursor-pointer font-bold text-gray-200 w-1/2 mt-6 p-2 border border-gray-400 rounded-xl'> <a className='block w-full h-full text-center' href='https://github.com/Armooooon'>Referenzen</a></button>
                 </div>
             </div>
-            <div className='absolute inset-0 overflow-hidden md:overflow-visible'>
-                <div className='hidden md:block'>
-                <ShinyEffect left={100} top={200} size={1400}/>
-                </div>
-           
-            <ShinyEffect left={-100} top={0} size={1200}/>
-            </div>
-
+      
             <img src={profilepic} className='w-[500px] md:-[600px]'/>
        </div>
     )

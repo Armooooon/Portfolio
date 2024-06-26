@@ -6,6 +6,7 @@ import project3 from '../assetsp/project3.png'
 import project4 from '../assetsp/project4.png'
 import project5 from '../assetsp/project5.png'
 import project6 from '../assetsp/project6.png'
+import kartengenerator from '../assetsp/projects/Kartengenerator.png'
 import { AiFillGithub } from 'react-icons/ai'
 import ShinyEffect from './ShinyEffect'
 
@@ -15,25 +16,25 @@ const projects = [
     {
         img: project1,
         title:  "Project #1",
-        description: "UI for frontend development using React",
+        description: "Eine Kleine, statische Website, für eine Lokale Schmiede",
         links: {
             site: "#",
-            github: "#"
+            github: "https://github.com/Inhorni/SchmiedeBlecken"
         }
     },
     {
         img: project2,
         title:  "Project #2",
-        description: "UI for frontend development using React",
+        description: "Eine Website für eine Schule in Demmin, erstellt im MVC mit PHP, HTML, CSS und JAVASCRIPT + SQL und MYSQL",
         links: {
             site: "#",
-            github: "#"
+            github: "https://github.com/Armooooon/Schulwebsite"
         }
     },
     {
-        img: project3,
+        img: kartengenerator,
         title:  "Project #3",
-        description: "UI for frontend development using React",
+        description: "In Kooperation -> ein Kartengenerator erstellt mit PHP, HTML, CSS und JAVASCRIPT sowie SQL und MYSQL ",
         links: {
             site: "#",
             github: "#"
@@ -42,19 +43,19 @@ const projects = [
     {
         img: project4,
         title:  "Project #4",
-        description: "UI for frontend development using React",
+        description: "Ein einfacher Discord-bot in Eclipse mit JAVA",
         links: {
             site: "#",
-            github: "#"
+            github: "https://github.com/Armooooon/OgerOve-bot"
         }
     },
     {
         img: project5,
         title:  "Project #5",
-        description: "UI for frontend development using React",
+        description: "Eine Autodatenbank für die Verwaltung von Autos.",
         links: {
             site: "#",
-            github: "#"
+            github: "https://github.com/Armooooon/AutoDatenbank"
         }
     },
     {
@@ -88,12 +89,7 @@ return(
     
 </div>
 
-<div className='absolute inset-0 '>
-                <div className='hidden md:block'>
-                <ShinyEffect left={100} top={0} size={900}/>
-                </div>
-           
-            </div>
+
 
 <ul className='z-10 ml-6 flex flex-row md:flex-col gap-6 flex-wrap justify-center mt-4 md:gap-1'>
   {projects.map((project, index) => (

@@ -22,3 +22,18 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+      <div className='absolute inset-0 overflow-hidden md:overflow-visible'>
+                <div className='hidden md:block'>
+                <ShinyEffect left={100} top={200} size={1400}/>
+                </div>
+           
+            <ShinyEffect left={-100} top={0} size={1200}/>
+            </div>
+
+<div className='absolute inset-0 '>
+                <div className='hidden md:block'>
+                <ShinyEffect left={100} top={0} size={900}/>
+                </div>
+           
+            </div>
