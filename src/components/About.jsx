@@ -14,7 +14,8 @@ import {
     DiBootstrap,
     DiMongodb,
     DiGithubBadge,
-    DiGit
+    DiGit,
+    DiMysql
 } from 'react-icons/di'
 
 const About = () => {
@@ -43,7 +44,7 @@ return (
         <div className='p-6'>
             <h2 className='text-gray-200 text.3xl font-bold mb-4'> Skills</h2>
             <p className='text-gray-300 mb-4'>
-                Ich bin ausgebildeter technischer Assistent für Informatik. Ich habe Erfahrungen in HTML, CSS und Javascript. Zusätzlich weiß ich mit Frameworks wie React.js und Bootstrap umzugehen und habe erfahrung in der versionskontrolle mit Git. 
+                Ich bin ausgebildeter technischer Assistent für Informatik. Ich habe Erfahrungen in HTML, CSS und Javascript. Zusätzlich weiß ich mit Frameworks wie React.js und Bootstrap umzugehen und habe erfahrung in der versionskontrolle mit Git. Letzlich zu erwähnen sind meine Kenntnise in MYSQL.
             </p>
             <div className='md:flex flex-wrap gap-4 text-4xl justify-center hidden'>
                 <DiHtml5 className='text-orange-600'/>
@@ -52,6 +53,7 @@ return (
                 <DiJavascript1 className='text-yellow-500'/>
                 <DiReact className='text-blue-500'/>
                 <DiGit className='text-red-500'/>
+                <DiMysql className='text-blue-500'/>
             </div>
 
         </div>

@@ -7,6 +7,11 @@ import project4 from '../assetsp/project4.png'
 import project5 from '../assetsp/project5.png'
 import project6 from '../assetsp/project6.png'
 import kartengenerator from '../assetsp/projects/Kartengenerator.png'
+import schmiedeblecken from '../assetsp/projects/schmiedeblecken.png'
+import ovbot from '../assetsp/projects/ovbot.png'
+import autodatenbank from '../assetsp/projects/Autodatenbank.png'
+import pest from '../assetsp/projects/Pestalozzi.png'
+import login from '../assetsp/projects/Login.png'
 import { AiFillGithub } from 'react-icons/ai'
 import ShinyEffect from './ShinyEffect'
 
@@ -14,7 +19,7 @@ import ShinyEffect from './ShinyEffect'
 
 const projects = [
     {
-        img: project1,
+        img: schmiedeblecken,
         title:  "Project #1",
         description: "Eine Kleine, statische Website, für eine Lokale Schmiede",
         links: {
@@ -23,7 +28,7 @@ const projects = [
         }
     },
     {
-        img: project2,
+        img: pest,
         title:  "Project #2",
         description: "Eine Website für eine Schule in Demmin, erstellt im MVC mit PHP, HTML, CSS und JAVASCRIPT + SQL und MYSQL",
         links: {
@@ -41,7 +46,7 @@ const projects = [
         }
     },
     {
-        img: project4,
+        img: ovbot,
         title:  "Project #4",
         description: "Ein einfacher Discord-bot in Eclipse mit JAVA",
         links: {
@@ -50,7 +55,7 @@ const projects = [
         }
     },
     {
-        img: project5,
+        img: autodatenbank,
         title:  "Project #5",
         description: "Eine Autodatenbank für die Verwaltung von Autos.",
         links: {
@@ -59,12 +64,12 @@ const projects = [
         }
     },
     {
-        img: project6,
+        img: login,
         title:  "Project #6",
-        description: "UI for frontend development using React",
+        description: "Ein Onlineshop mit Shopware Erstellt, sowie HTML und CSS",
         links: {
             site: "#",
-            github: "#"
+            github: "https://we-are-nord.de"
         }
     },
 ]
@@ -83,7 +88,6 @@ return(
     {projects[currentProject].description}
     </p>
     <div className='flex space-x-4'>
-        <a href={projects[currentProject].links.site} className='px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition duration-300'>View Site</a>
         <a href={projects[currentProject].links.github} className='px-4 py-2 bg-gray-800 text-gray-200 text-2xl rounded-lg hover:bg-gray-600 transition duration-300'> <AiFillGithub/> </a>
     </div>
     

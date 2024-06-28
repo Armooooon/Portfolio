@@ -16,9 +16,9 @@ const Hero = () => {
                 sequence={[
                 "Entwickler", 
                  1000,
-                "Webdesign",
-                1000,
                 "Frontend",
+                1000,
+                "Backend",
                  1000
                  ]}
                 speed={50}
