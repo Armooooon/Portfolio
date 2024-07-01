@@ -1,7 +1,7 @@
 {
-  "homepage": "https://Armooooon.github.io/Portfolio",
+  "homepage": "https://Armooooon.github.io/",
   "name": "portfolio",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
