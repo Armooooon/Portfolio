@@ -15,7 +15,9 @@ import {
     DiMongodb,
     DiGithubBadge,
     DiGit,
-    DiMysql
+    DiMysql,
+    DiLaravel,
+    DiPhp
 } from 'react-icons/di'
 
 const About = () => {
@@ -44,7 +46,7 @@ return (
         <div className='p-6'>
             <h2 className='text-gray-200 text.3xl font-bold mb-4'> Skills</h2>
             <p className='text-gray-300 mb-4'>
-                Ich bin ausgebildeter technischer Assistent für Informatik. Ich habe Erfahrungen in HTML, CSS und Javascript. Zusätzlich weiß ich mit Frameworks wie React.js und Bootstrap umzugehen und habe erfahrung in der versionskontrolle mit Git. Letzlich zu erwähnen sind meine Kenntnise in MYSQL.
+            Ich bin ausgebildeter Technischer Assistent für Informatik und verfüge über umfangreiche Kenntnisse in HTML und CSS. Zudem habe ich Erfahrung im Umgang mit Frameworks wie React.js und Bootstrap. Ich habe auch Erfahrung mit der Versionskontrolle durch Git. Darüber hinaus verfüge ich über solide Kenntnisse in MySQL sowie in PHP und dem Framework Laravel(Mit Livewire und Tailwind CSS).
             </p>
             <div className='md:flex flex-wrap gap-4 text-4xl justify-center hidden'>
                 <DiHtml5 className='text-orange-600'/>
@@ -54,6 +56,8 @@ return (
                 <DiReact className='text-blue-500'/>
                 <DiGit className='text-red-500'/>
                 <DiMysql className='text-blue-500'/>
+                <DiLaravel className='text-orange-700'/>
+                <DiPhp className='text-blue-900'/>
             </div>
 
         </div>
@@ -61,7 +65,7 @@ return (
         <div className='p-6'>
             <h2 className='text-gray-200 text.3xl font-bold mb-4'> Interessen</h2>
             <p className='text-gray-300 mb-4'>
-                Ich bin begeistert für Strategie-Computerspiele, treibe Sport, beschäftige mich mit Computern, Programmiere kleine Spiele und höre ab und zu gerne Musik
+            Ich bin ein begeisterter Fan von Strategie-Computerspielen, treibe regelmäßig Sport und beschäftige mich intensiv mit Computern. In meiner Freizeit programmiere ich kleine Spiele und höre gerne Musik.
             </p>
         
 
@@ -88,7 +92,7 @@ return (
         <div className='p-6'>
             <h2 className='text-gray-200 text.3xl font-bold mb-4'> Sprachen</h2>
             <p className='text-gray-300 mb-4'>
-                Deutsch Spreche ich als Muttersprache. Englisch ist meine Zweitsprache, diese spreche ich Fließend (Level C1), angelernt habe ich Russisch, wobei ich hier lediglich die Grundkenntnise besitze.
+            Deutsch ist meine Muttersprache. Englisch spreche ich fließend auf C1-Niveau. Außerdem habe ich Grundkenntnisse in Russisch.
             </p>
         
 

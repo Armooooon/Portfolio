@@ -8,7 +8,7 @@ import project5 from '../assetsp/project5.png'
 import project6 from '../assetsp/project6.png'
 import kartengenerator from '../assetsp/projects/Kartengenerator.png'
 import schmiedeblecken from '../assetsp/projects/schmiedeblecken.png'
-import ovbot from '../assetsp/projects/ovbot.png'
+import ovbot from '../assetsp/projects/project8.png'
 import autodatenbank from '../assetsp/projects/Autodatenbank.png'
 import pest from '../assetsp/projects/Pestalozzi.png'
 import login from '../assetsp/projects/Login.png'
@@ -48,10 +48,10 @@ const projects = [
     {
         img: ovbot,
         title:  "Project #4",
-        description: "Ein einfacher Discord-bot in Eclipse mit JAVA",
+        description: "Eine Website zum Karten sammeln und Decks bauen mit HTML, Tailwind CSS, Laravel und Livewire",
         links: {
             site: "#",
-            github: "https://github.com/Armooooon/OgerOve-bot"
+            github: "#"
         }
     },
     {
