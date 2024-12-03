@@ -8,12 +8,18 @@ const Navbar = () => {
     const [nav, setNav] = useState(false)
 
     const toggleNav = () => {
-        setNav(!nav)
-    }
-
+        setNav(!nav);
+        if (!nav) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    };
+    
     const closeNav = () => {
-        setNav(false)
-    }
+        setNav(false);
+        document.body.classList.remove('no-scroll');
+    };
 
     return (
         <div className='flex text-2xl justify-between text-gray-200 items-center px-6 max-w-[1300px] mx-auto h-24'>

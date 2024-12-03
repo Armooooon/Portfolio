@@ -7,13 +7,14 @@ const Contact = () => {
     return (
         <div className="px-6 max-w-[1000px] mx-auto glass grid md:grid-cols-2 place-items-center" id="contact">
           
-                <ul className="my-auto pr-6 ">
+                <ul className="my-auto md:pr-6 ">
                      <li className="flex">
-                         <AiFillLinkedin className="w-[70px] h-auto text-gray-300"/>
+                         <AiFillLinkedin  className="w-[70px] h-auto text-gray-300"/>
                          <div className="m-5">
                             <h3 className="text-lg font-bold text-gray-200">Kontakt</h3>
                             <p className="text-gray-400">Mobile : +49 1520 6334646</p>
                             <p className="text-gray-400">Email : Halaouiaron35@gmail.com</p>
+                            <a target='_blank' rel="noopener noreferrer" href="https://www.linkedin.com/in/aron-halaoui-0267902b1/" className="text-gray-400"> <p className="text-gray-400">Zum LinkedIn</p></a>
                          </div>
                      </li>
 
@@ -22,7 +23,7 @@ const Contact = () => {
                         <AiFillGithub className="w-[70px] h-auto text-gray-300"/>
                         <div className="m-5">
                             <h3 className="text-lg font-bold text-gray-200">Mein Github:</h3>
-                            <p className="text-gray-400"><a href="https://github.com/Armooooon">Zum Github</a></p>
+                            <p className="text-gray-400" target='_blank' rel="noopener noreferrer"><a href="https://github.com/Armooooon">Zum Github</a></p>
                          </div>
                     </li>
                 </ul>

@@ -31,10 +31,10 @@ const Hero = () => {
                     <div className='flex flex-row gap-4 mb-4 md:mb-0'>
                   <button   className='transform tramsition-transform hover:scale-105 hover:shadow-lg
                     z-10 cursor-pointer font-bold text-gray-200 w-1/2 mt-6 p-2
-                    bg-gradient-to-r from-[#50a7c7] via-[#1f7cBf] to-[#3d6ca4] rounded-xl'><a className='block w-full h-full text-center'  href='https://drive.google.com/file/d/1B0kFwF5hkYRkfYddM52iUpYBwoOFcq9D/view?usp=drive_link'>Lebenslauf ansehen</a></button>
+                    bg-gradient-to-r from-[#50a7c7] via-[#1f7cBf] to-[#3d6ca4] rounded-xl'><a className='block w-full h-full text-center' target='_blank' rel="noopener noreferrer"  href='/Portfolio/src/assetsp/Lebenslauf_A.pdf'>Lebenslauf ansehen</a></button>
 
                     <button className='transform tramsition-transform hover:scale-105 hover:shadow-lg
-                    z-10 cursor-pointer font-bold text-gray-200 w-1/2 mt-6 p-2 border border-gray-400 rounded-xl'> <a className='block w-full h-full text-center' href='https://github.com/Armooooon'>Referenzen</a></button>
+                    z-10 cursor-pointer font-bold text-gray-200 w-1/2 mt-6 p-2 border border-gray-400 rounded-xl'> <a className='block w-full h-full text-center' target='_blank' rel="noopener noreferrer" href='https://github.com/Armooooon'>Referenzen</a></button>
                 </div>
             </div>
       
