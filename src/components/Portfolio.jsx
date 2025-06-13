@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AiFillGithub, AiOutlineGlobal } from 'react-icons/ai';
 import schmiedeblecken from '../assetsp/projects/schmiedeblecken.png';
 import pest from '../assetsp/projects/Pestalozzi.png';
@@ -62,12 +62,32 @@ const projects = [
 const Portfolio = () => {
     const [currentProject, setCurrentProject] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [setNoScroll, setSetNoScroll] = useState(false);
 
-    const openModal = () => setIsModalOpen(true);
-    const closeModal = () => setIsModalOpen(false);
+    useEffect(() => {
+        if (setNoScroll) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [setNoScroll]);
 
-    return (
-        <div className="relative max-w-[800px] mx-auto p-6 md:my-20 flex flex-col md:flex-row" id="portfolio">
+    const openModal = () => {
+        setIsModalOpen(true);
+        setSetNoScroll(true);
+    };
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSetNoScroll(false);
+    };
+
+    // Removed handleScroll function as it is unused
+
+    return  (
+        <div className="relative max-w-[800px] mx-auto p-6 md:my-20 flex flex-col md:flex-row " id="portfolio">
             <div className="z-10 glass p-6 w-full border-2 max-w-[600px]">
                 <div className="w-full h-80 cursor-pointer" onClick={openModal}>
                     <img
@@ -103,7 +123,7 @@ const Portfolio = () => {
                 </div>
             </div>
 
-            <ul className="z-10 ml-6 flex flex-row md:flex-col gap-6 flex-wrap justify-center mt-4 md:gap-1">
+            <ul className="z-10 md:ml-6 flex flex-row md:flex-col gap-6 flex-wrap justify-center mt-4 md:gap-1">
                 {projects.map((project, index) => (
                     <li
                         key={index}

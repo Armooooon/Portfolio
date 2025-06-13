@@ -49,7 +49,7 @@ const Navbar = () => {
              {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
             </div>
 
-            <div className={nav ? 'text-center z20 fixed h-full w-full left-0 top-0 bg-[#232323]' : 'fixed left-[-100%]'}>
+            <div className={nav ? 'text-center z-20 fixed h-full w-full left-0 top-0 bg-[#232323]' : 'fixed left-[-100%]'}>
                 <ul className='font-semibold text-4xl space-y-8 mt-24'>
                     <li>
                     <Link to='about' onClick={closeNav} smooth={true} offset={50} duration={500}>About</Link>
